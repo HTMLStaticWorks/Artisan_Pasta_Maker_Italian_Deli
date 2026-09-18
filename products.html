@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Handmade Pasta & Sauces | Pasta Forma</title>
+  <meta name="description" content="Explore handcrafted egg tagliatelle, wide pappardelle, artisan ravioli, potato gnocchi, and house-made Italian sauces at Pasta Forma.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fresh Handmade Pasta & Sauces | Pasta Forma">
+  <meta property="og:description" content="Explore our handcrafted pasta shapes and slow-simmered house sauces.">
+  <meta property="og:image" content="assets/images/fresh-pasta-shapes.webp">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="site-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Pasta Forma Home">
+        <img src="assets/images/logo.svg" alt="Pasta Forma Logo" class="logo-mark">
+        <div class="brand-text">
+          <span class="brand-name">PASTA FORMA</span>
+          <span class="brand-descriptor">ARTISAN PASTA • ITALIAN DELI</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu-desktop" role="menubar">
+        <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home 1</a></li>
+        <li role="none"><a href="home2.html" class="nav-link" role="menuitem">Home 2</a></li>
+        <li role="none"><a href="products.html" class="nav-link active" role="menuitem">Products</a></li>
+        <li role="none"><a href="deli-counter.html" class="nav-link" role="menuitem">Deli Counter</a></li>
+        <li role="none"><a href="catering.html" class="nav-link" role="menuitem">Catering</a></li>
+        <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions-desktop">
+        <button class="control-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">🌙</button>
+        <button class="control-btn rtl-toggle-btn" title="Toggle Layout Direction" aria-label="Toggle RTL">RTL</button>
+        <button class="btn btn-primary" data-modal="order">Order Now →</button>
+      </div>
+
+      <button class="hamburger-btn" aria-label="Open Mobile Menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <span class="mobile-drawer-title">Navigation</span>
+      <button class="mobile-drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <ul class="mobile-drawer-nav">
+      <li><a href="index.html" class="mobile-nav-link">Home 1</a></li>
+      <li><a href="home2.html" class="mobile-nav-link">Home 2</a></li>
+      <li><a href="products.html" class="mobile-nav-link active">Products</a></li>
+      <li><a href="deli-counter.html" class="mobile-nav-link">Deli Counter</a></li>
+      <li><a href="catering.html" class="mobile-nav-link">Catering</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <div class="mobile-controls-centered">
+        <button class="control-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">🌙</button>
+        <button class="control-btn rtl-toggle-btn" title="Toggle Layout Direction" aria-label="Toggle RTL">RTL</button>
+      </div>
+      <button class="btn btn-primary" data-modal="order" style="width: 100%;">Order Now →</button>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- PRODUCTS — SECTION 01 — HERO -->
+    <section class="page-hero-compact hero-bg-products">
+      <div class="container reveal-on-scroll">
+        <span class="eyebrow">HANDCRAFTED SELECTIONS</span>
+        <h1 class="h1-editorial">Fresh Pasta. Every Shape Has a Story.</h1>
+        <p>
+          Explore our handmade pasta, house sauces, and Italian-inspired deli selections crafted every morning in small artisan batches.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRODUCTS — SECTION 02 — PASTA COLLECTION -->
+    <section style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">EDITORIAL CATALOGUE</span>
+          <h2 class="h2-editorial">The Handmade Pasta Collection</h2>
+          <p style="margin-inline: auto;">Sample menu content for demonstration purposes. Daily availability varies based on fresh ingredients.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-lg); margin-top: var(--space-xl);">
+          <!-- Product Card 1 -->
+          <div class="stage-card reveal-on-scroll" style="background: var(--bg-primary); padding: var(--space-md);">
+            <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius-sm); margin-bottom: var(--space-sm);">
+              <img src="assets/images/6.png" alt="Tagliatelle" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <span class="eyebrow">LONG EGG RIBBONS</span>
+            <h3 class="h3-editorial" style="margin-bottom: 6px;">TAGLIATELLE</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 12px;">Fresh egg pasta cut by hand into silky golden ribbons.</p>
+            <div style="background: var(--bg-card); padding: 10px; border-radius: var(--radius-sm); font-size: 0.85rem;">
+              <strong>Best with:</strong> Rich tomato, Bolognese and slow-cooked meat sauces.
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="stage-card reveal-on-scroll" style="background: var(--bg-primary); padding: var(--space-md);">
+            <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius-sm); margin-bottom: var(--space-sm);">
+              <img src="assets/images/7.png" alt="Pappardelle" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <span class="eyebrow">WIDE RIBBONS</span>
+            <h3 class="h3-editorial" style="margin-bottom: 6px;">PAPPARDELLE</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 12px;">Wide ribbons with a generous, porous texture to hold robust ragùs.</p>
+            <div style="background: var(--bg-card); padding: 10px; border-radius: var(--radius-sm); font-size: 0.85rem;">
+              <strong>Best with:</strong> Braised beef, game meat ragù, and mushroom sauces.
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="stage-card reveal-on-scroll" style="background: var(--bg-primary); padding: var(--space-md);">
+            <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius-sm); margin-bottom: var(--space-sm);">
+              <img src="assets/images/8.png" alt="Ravioli" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <span class="eyebrow">STUFFED PASTA</span>
+            <h3 class="h3-editorial" style="margin-bottom: 6px;">RAVIOLI</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 12px;">Delicate stuffed pasta pillows filled daily with fresh ricotta and herbs.</p>
+            <div style="background: var(--bg-card); padding: 10px; border-radius: var(--radius-sm); font-size: 0.85rem;">
+              <strong>Best with:</strong> Brown butter, crispy sage, or light tomato passata.
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="stage-card reveal-on-scroll" style="background: var(--bg-primary); padding: var(--space-md);">
+            <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius-sm); margin-bottom: var(--space-sm);">
+              <img src="assets/images/9.png" alt="Orecchiette" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <span class="eyebrow">PUGLIESE SHAPES</span>
+            <h3 class="h3-editorial" style="margin-bottom: 6px;">ORECCHIETTE</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 12px;">Rustic ear-shaped pasta with a hand-thumbed textured interior.</p>
+            <div style="background: var(--bg-card); padding: 10px; border-radius: var(--radius-sm); font-size: 0.85rem;">
+              <strong>Best with:</strong> Vegetable pesto, sautéed greens, and herb oil finishes.
+            </div>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div class="stage-card reveal-on-scroll" style="background: var(--bg-primary); padding: var(--space-md);">
+            <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius-sm); margin-bottom: var(--space-sm);">
+              <img src="assets/images/10.png" alt="Gnocchi" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <span class="eyebrow">POTATO DUMPLINGS</span>
+            <h3 class="h3-editorial" style="margin-bottom: 6px;">GNOCCHI</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 12px;">Feather-light potato dumplings hand-ridged across wooden boards.</p>
+            <div style="background: var(--bg-card); padding: 10px; border-radius: var(--radius-sm); font-size: 0.85rem;">
+              <strong>Best with:</strong> Gorgonzola cream, brown butter & sage, or tomato sugo.
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div class="stage-card reveal-on-scroll" style="background: var(--bg-primary); padding: var(--space-md);">
+            <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius-sm); margin-bottom: var(--space-sm);">
+              <img src="assets/images/11.png" alt="Rigatoni" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <span class="eyebrow">BRONZE DIE EXTRUDED</span>
+            <h3 class="h3-editorial" style="margin-bottom: 6px;">RIGATONI</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 12px;">Wide ridged tubular pasta extruded through bronze dies for optimum sauce grip.</p>
+            <div style="background: var(--bg-card); padding: 10px; border-radius: var(--radius-sm); font-size: 0.85rem;">
+              <strong>Best with:</strong> Rich All'Amatriciana, slow-cooked ragù, or roasted garlic cream.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS — SECTION 03 — HOUSE SAUCES -->
+    <section>
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">SLOW-SIMMERED FLAVORS</span>
+          <h2 class="h2-editorial">Sauces Made for the Pasta</h2>
+          <p style="margin-inline: auto;">Crafted in small pots using authentic Italian passata, extra virgin olive oil, and fresh herbs.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-md);">
+          <div class="stage-card reveal-on-scroll">
+            <span class="eyebrow">RED PASSATA</span>
+            <h4>SLOW TOMATO</h4>
+            <p style="font-size: 0.9rem;">Rich San Marzano tomato-based sauce simmered slowly with garlic and basil.</p>
+          </div>
+          <div class="stage-card reveal-on-scroll">
+            <span class="eyebrow">FRESH HERBS</span>
+            <h4>BASIL PESTO</h4>
+            <p style="font-size: 0.9rem;">Fresh Genovese basil, toasted pine nuts, garlic, and cold-pressed olive oil.</p>
+          </div>
+          <div class="stage-card reveal-on-scroll">
+            <span class="eyebrow">CREAMY SAVORY</span>
+            <h4>ROASTED GARLIC CREAM</h4>
+            <p style="font-size: 0.9rem;">Velvety cream sauce infused with roasted sweet garlic cloves and thyme.</p>
+          </div>
+          <div class="stage-card reveal-on-scroll">
+            <span class="eyebrow">DELICATE FINISH</span>
+            <h4>HERB BUTTER</h4>
+            <p style="font-size: 0.9rem;">Cultured butter infused with mountain sage, marjoram, and cracked sea salt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS — SECTION 04 — PASTA + SAUCE PAIRING TOOL -->
+    <section style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">INTERACTIVE RECOMMENDATION</span>
+          <h2 class="h2-editorial">Pasta + Sauce Pairing Matrix</h2>
+          <p style="margin-inline: auto;">Select your preferred pasta shape and house sauce to discover our chef's suggested pairing note.</p>
+        </div>
+
+        <div class="pairing-tool reveal-on-scroll">
+          <div class="pairing-grid">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label" for="pairingPasta">Select Pasta Shape</label>
+              <select id="pairingPasta" class="select-box">
+                <option value="tagliatelle">Tagliatelle Ribbons</option>
+                <option value="pappardelle">Wide Pappardelle</option>
+                <option value="orecchiette">Hand-pressed Orecchiette</option>
+                <option value="ravioli">Stuffed Ricotta Ravioli</option>
+                <option value="gnocchi">Potato Gnocchi</option>
+                <option value="rigatoni">Bronze-Die Rigatoni</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label" for="pairingSauce">Select House Sauce</label>
+              <select id="pairingSauce" class="select-box">
+                <option value="tomato">Slow San Marzano Tomato</option>
+                <option value="pesto">Fresh Basil Pesto</option>
+                <option value="cream">Roasted Garlic Cream</option>
+                <option value="butter">Herb Butter & Sage</option>
+              </select>
+            </div>
+
+            <div>
+              <span class="form-label">Suggested Pairing Note</span>
+              <div id="pairingResult" class="pairing-result-box">
+                Classic & Comforting — The silky ribbons coat evenly with slow-simmered San Marzano tomato sauce.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS — SECTION 05 — UNIQUE SECTION: ARTISAN COOKING GUIDE & QUALITY COMMITMENT -->
+    <section style="background-color: var(--bg-primary); padding-block: var(--space-xl); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">ATELIER HANDBOOK & COMMITMENT</span>
+          <h2 class="h2-editorial">The Art of Cooking Fresh Pasta</h2>
+          <p style="margin-inline: auto;">Fresh handmade egg pasta cooks in under 3 minutes. Follow our atelier chef's guide for a perfect al dente table.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-md); margin-top: var(--space-lg);">
+          
+          <div class="stage-card reveal-on-scroll" style="background: var(--bg-secondary); border-top: 3px solid var(--tomato-red);">
+            <div style="font-size: 2rem; margin-bottom: 8px;">🌊</div>
+            <span class="eyebrow">STEP 01</span>
+            <h4 style="margin-bottom: 6px;">SALTY MEDITERRANEAN WATER</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Bring 4 quarts of water to a rolling boil per pound of fresh pasta. Add 1 tbsp coarse sea salt so the water tastes like ocean water.</p>
+          </div>
+
+          <div class="stage-card reveal-on-scroll" style="background: var(--bg-secondary); border-top: 3px solid var(--tomato-red);">
+            <div style="font-size: 2rem; margin-bottom: 8px;">⏱️</div>
+            <span class="eyebrow">STEP 02</span>
+            <h4 style="margin-bottom: 6px;">2-MINUTE FLASH COOK</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Drop ribbons or filled ravioli gently into boiling water. Fresh pasta floats to the top when tender and al dente in just 120–180 seconds.</p>
+          </div>
+
+          <div class="stage-card reveal-on-scroll" style="background: var(--bg-secondary); border-top: 3px solid var(--tomato-red);">
+            <div style="font-size: 2rem; margin-bottom: 8px;">🧈</div>
+            <span class="eyebrow">STEP 03</span>
+            <h4 style="margin-bottom: 6px;">STARCHY EMULSION</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Reserve 1/2 cup of hot starchy cooking water before draining. Swirl water with warm sauce to bind the sauce seamlessly to the pasta ribbons.</p>
+          </div>
+
+          <div class="stage-card reveal-on-scroll" style="background: var(--bg-secondary); border-top: 3px solid var(--tomato-red);">
+            <div style="font-size: 2rem; margin-bottom: 8px;">🧀</div>
+            <span class="eyebrow">STEP 04</span>
+            <h4 style="margin-bottom: 6px;">FINISH OFF THE HEAT</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Toss pasta with sauce off the flame. Finish with a drizzle of cold-pressed EVOO, freshly grated Parmigiano 24M, and torn basil leaves.</p>
+          </div>
+
+        </div>
+
+        <!-- Quality Guarantee Badge Bar -->
+        <div class="reveal-on-scroll" style="margin-top: var(--space-xl); padding: var(--space-md) var(--space-lg); background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: var(--space-md); text-align: center;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.5rem;">🌱</span>
+            <span style="font-size: 0.88rem; font-weight: 700; color: var(--text-primary);">100% Italian Durum Semolina</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.5rem;">🥚</span>
+            <span style="font-size: 0.88rem; font-weight: 700; color: var(--text-primary);">Farm-Fresh Pasture Egg Yolks</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.5rem;">☀️</span>
+            <span style="font-size: 0.88rem; font-weight: 700; color: var(--text-primary);">Handmade Fresh Every Morning</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Pasta Forma Home" style="margin-bottom: var(--space-xs);">
+            <img src="assets/images/logo.svg" alt="Pasta Forma Logo" class="logo-mark">
+            <div class="brand-text">
+              <span class="brand-name" style="color: var(--pasta-cream);">PASTA FORMA</span>
+              <span class="brand-descriptor">ARTISAN PASTA • ITALIAN DELI</span>
+            </div>
+          </a>
+          <p>
+            An independent small-batch pasta atelier producing fresh handmade pasta, house sauces, traditional deli specialties, and catering selections with Italian care.
+          </p>
+          <div class="footer-social-bar">
+            <a href="#" class="footer-social-icon" aria-label="Instagram" title="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Facebook" title="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Twitter / X" title="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="YouTube" title="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">EXPLORE</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Atelier</a></li>
+            <li><a href="home2.html">Home Pasta Bar</a></li>
+            <li><a href="products.html">Fresh Pasta & Sauces</a></li>
+            <li><a href="deli-counter.html">Deli Counter Selections</a></li>
+            <li><a href="catering.html">Catering & Events</a></li>
+            <li><a href="contact.html">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">VISIT THE ATELIER</h4>
+          <p class="footer-address">
+            <strong>Atelier Address:</strong> 142 Via Roma, Pasta District, NY 10012<br>
+            <strong>Hours:</strong> Tue – Sun | 10:00 AM – 9:00 PM<br>
+            <strong>Phone:</strong> +1 (555) 342-7278<br>
+            <strong>Email:</strong> ciao@pastaforma.com
+          </p>
+          <div style="margin-top: var(--space-sm);">
+            <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.75rem;">Get Directions →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 PASTA FORMA. Made by hand. Meant to be shared.</span>
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL MODAL BACKDROP CONTAINER -->
+  <div class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 class="h2-editorial modal-title" style="margin-bottom: var(--space-md); font-size: 1.8rem;">Enquiry Form</h3>
+      <div class="modal-body-content">
+        <!-- Content injected dynamically via modal.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

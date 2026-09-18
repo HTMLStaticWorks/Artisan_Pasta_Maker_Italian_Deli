@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Italian Deli Counter | Pasta Forma</title>
+  <meta name="description" content="Discover our rotating Italian deli counter selection: artisan cheeses, house sauces, marinated antipasti, and specialty pantry items.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Italian Deli Counter | Pasta Forma">
+  <meta property="og:description" content="A rotating selection of house sauces, cheeses, antipasti and Italian pantry favorites.">
+  <meta property="og:image" content="assets/images/italian-deli-counter.webp">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="site-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Pasta Forma Home">
+        <img src="assets/images/logo.svg" alt="Pasta Forma Logo" class="logo-mark">
+        <div class="brand-text">
+          <span class="brand-name">PASTA FORMA</span>
+          <span class="brand-descriptor">ARTISAN PASTA • ITALIAN DELI</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu-desktop" role="menubar">
+        <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home 1</a></li>
+        <li role="none"><a href="home2.html" class="nav-link" role="menuitem">Home 2</a></li>
+        <li role="none"><a href="products.html" class="nav-link" role="menuitem">Products</a></li>
+        <li role="none"><a href="deli-counter.html" class="nav-link active" role="menuitem">Deli Counter</a></li>
+        <li role="none"><a href="catering.html" class="nav-link" role="menuitem">Catering</a></li>
+        <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions-desktop">
+        <button class="control-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">🌙</button>
+        <button class="control-btn rtl-toggle-btn" title="Toggle Layout Direction" aria-label="Toggle RTL">RTL</button>
+        <button class="btn btn-primary" data-modal="deli">Order Now →</button>
+      </div>
+
+      <button class="hamburger-btn" aria-label="Open Mobile Menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <span class="mobile-drawer-title">Navigation</span>
+      <button class="mobile-drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <ul class="mobile-drawer-nav">
+      <li><a href="index.html" class="mobile-nav-link">Home 1</a></li>
+      <li><a href="home2.html" class="mobile-nav-link">Home 2</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="deli-counter.html" class="mobile-nav-link active">Deli Counter</a></li>
+      <li><a href="catering.html" class="mobile-nav-link">Catering</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <div class="mobile-controls-centered">
+        <button class="control-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">🌙</button>
+        <button class="control-btn rtl-toggle-btn" title="Toggle Layout Direction" aria-label="Toggle RTL">RTL</button>
+      </div>
+      <button class="btn btn-primary" data-modal="deli" style="width: 100%;">Order Now →</button>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- DELI — SECTION 01 — HERO -->
+    <section class="page-hero-compact hero-bg-deli">
+      <div class="container reveal-on-scroll">
+        <span class="eyebrow">NEIGHBORHOOD DELICATESSEN</span>
+        <h1 class="h1-editorial">The Deli Counter, Beyond the Pasta Case.</h1>
+        <p>
+          A rotating selection of house-simmered sauces, aged cheeses, marinated antipasti, and Italian-inspired pantry favorites.
+        </p>
+      </div>
+    </section>
+
+    <!-- DELI — SECTION 02 — COUNTER STORY -->
+    <section style="background-color: var(--bg-secondary);">
+      <div class="container story-grid">
+        <div class="hero-image-wrapper reveal-on-scroll" style="aspect-ratio: 4 / 3;">
+          <img src="assets/images/13.png" alt="Aged Parmigiano-Reggiano cheese block" loading="lazy">
+        </div>
+        <div class="story-card-overlay reveal-on-scroll">
+          <span class="eyebrow">ATELIER SPECIALTIES</span>
+          <h2 class="h2-editorial" style="margin-bottom: var(--space-sm);">Pick a Little Something for the Table</h2>
+          <p style="margin-bottom: var(--space-md);">
+            Our deli counter brings together the finest components of an authentic Italian lunch table. Stop by to pick up freshly jarred sauces or hand-cut cheeses.
+          </p>
+
+          <div class="deli-story-points">
+            <div><strong>• House Sauces</strong></div>
+            <div><strong>• Aged Cheeses</strong></div>
+            <div><strong>• Marinated Antipasti</strong></div>
+            <div><strong>• Fresh Herbs & Oils</strong></div>
+            <div><strong>• Pantry Staples</strong></div>
+            <div><strong>• Seasonal Specials</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DELI — SECTION 03 — FEATURED COUNTER ITEMS -->
+    <section>
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">SAMPLE DAILY COUNTER</span>
+          <h2 class="h2-editorial">Featured Counter Highlights</h2>
+          <p style="margin-inline: auto;">Sample demonstration selection. All items subject to seasonal availability at the deli.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-md); margin-top: var(--space-lg);">
+          <!-- Card 1 -->
+          <div class="stage-card deli-card-interactive reveal-on-scroll" tabindex="0" aria-label="House Tomato Sauce Details">
+            <div class="deli-card-content">
+              <span class="eyebrow">HOUSE SAUCE</span>
+              <h4>HOUSE TOMATO SAUCE</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 8px;">San Marzano passata simmered 4 hours with fresh basil.</p>
+              <span class="deli-use-tag">Suggested use: Tagliatelle or Gnocchi base</span>
+              <span class="deli-details-hint">🔍 Click for details</span>
+            </div>
+
+            <div class="deli-popup-overlay" aria-hidden="true">
+              <div class="deli-popup-header">
+                <span class="eyebrow">SAUCE SPECIFICATION</span>
+                <button class="deli-popup-close" aria-label="Close details">&times;</button>
+              </div>
+              <div class="deli-popup-img-wrapper">
+                <img src="assets/images/14.png" alt="House Tomato Sauce" class="deli-popup-img">
+              </div>
+              <h4 class="deli-popup-title">HOUSE TOMATO SAUCE</h4>
+              <div class="deli-popup-body">
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Origin:</span>
+                  <span class="deli-detail-val">San Marzano DOP Tomatoes, Campania</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Craft:</span>
+                  <span class="deli-detail-val">Slowly simmered in copper pots for 4 hours with cold-pressed EVOO & crushed garlic.</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Chef's Note:</span>
+                  <span class="deli-detail-val">100% natural tomato sweetness with balanced acidity. Never sweetened with sugar.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="stage-card deli-card-interactive reveal-on-scroll" tabindex="0" aria-label="Basil Pesto Details">
+            <div class="deli-card-content">
+              <span class="eyebrow">HOUSE PESTO</span>
+              <h4>BASIL PESTO</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 8px;">Pounded basil leaves, pine nuts, garlic, and Ligurian olive oil.</p>
+              <span class="deli-use-tag">Suggested use: Orecchiette coat or crostini spread</span>
+              <span class="deli-details-hint">🔍 Click for details</span>
+            </div>
+
+            <div class="deli-popup-overlay" aria-hidden="true">
+              <div class="deli-popup-header">
+                <span class="eyebrow">PESTO SPECIFICATION</span>
+                <button class="deli-popup-close" aria-label="Close details">&times;</button>
+              </div>
+              <div class="deli-popup-img-wrapper">
+                <img src="assets/images/15.png" alt="Fresh Basil Pesto" class="deli-popup-img">
+              </div>
+              <h4 class="deli-popup-title">BASIL PESTO</h4>
+              <div class="deli-popup-body">
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Origin:</span>
+                  <span class="deli-detail-val">Genovese Basil DOP, Liguria</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Craft:</span>
+                  <span class="deli-detail-val">Pounded basil blended with toasted pine nuts, Parmigiano, & Pecorino Sardo.</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Chef's Note:</span>
+                  <span class="deli-detail-val">Emulsify with starchy warm pasta water when coating hot orecchiette.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="stage-card deli-card-interactive reveal-on-scroll" tabindex="0" aria-label="Parmesan 24 Months Details">
+            <div class="deli-card-content">
+              <span class="eyebrow">IMPORTED CHEESE</span>
+              <h4>PARMESAN (24 MONTHS)</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 8px;">Nutty, crystalline aged Parmigiano-Reggiano cut from whole wheels.</p>
+              <span class="deli-use-tag">Suggested use: Freshly grated atop warm pasta</span>
+              <span class="deli-details-hint">🔍 Click for details</span>
+            </div>
+
+            <div class="deli-popup-overlay" aria-hidden="true">
+              <div class="deli-popup-header">
+                <span class="eyebrow">CHEESE SPECIFICATION</span>
+                <button class="deli-popup-close" aria-label="Close details">&times;</button>
+              </div>
+              <div class="deli-popup-img-wrapper">
+                <img src="assets/images/16.png" alt="Aged Parmigiano Reggiano" class="deli-popup-img">
+              </div>
+              <h4 class="deli-popup-title">PARMESAN (24 MONTHS)</h4>
+              <div class="deli-popup-body">
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Origin:</span>
+                  <span class="deli-detail-val">Reggio Emilia, Italy</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Craft:</span>
+                  <span class="deli-detail-val">Aged 24 full months with crunchy tyrosine crystals & rich butterscotch aroma.</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Chef's Note:</span>
+                  <span class="deli-detail-val">Shave paper-thin over arugula salad or grate fine over handmade tagliatelle.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="stage-card deli-card-interactive reveal-on-scroll" tabindex="0" aria-label="Marinated Vegetables Details">
+            <div class="deli-card-content">
+              <span class="eyebrow">ANTIPASTI</span>
+              <h4>MARINATED VEGETABLES</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 8px;">Artichoke hearts, sun-dried tomatoes, and sweet baby peppers.</p>
+              <span class="deli-use-tag">Suggested use: Dinner starter platter</span>
+              <span class="deli-details-hint">🔍 Click for details</span>
+            </div>
+
+            <div class="deli-popup-overlay" aria-hidden="true">
+              <div class="deli-popup-header">
+                <span class="eyebrow">ANTIPASTI SPECIFICATION</span>
+                <button class="deli-popup-close" aria-label="Close details">&times;</button>
+              </div>
+              <div class="deli-popup-img-wrapper">
+                <img src="assets/images/17.png" alt="Marinated Antipasti Vegetables" class="deli-popup-img">
+              </div>
+              <h4 class="deli-popup-title">MARINATED VEGETABLES</h4>
+              <div class="deli-popup-body">
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Origin:</span>
+                  <span class="deli-detail-val">Puglia & Roman Countryside</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Craft:</span>
+                  <span class="deli-detail-val">Roman artichokes, sun-dried tomatoes, & sweet peppers in herbs & white balsamic.</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Chef's Note:</span>
+                  <span class="deli-detail-val">Serve at room temperature alongside freshly toasted sourdough focaccia slices.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="stage-card deli-card-interactive reveal-on-scroll" tabindex="0" aria-label="Castelvetrano Olives Details">
+            <div class="deli-card-content">
+              <span class="eyebrow">PANTRY SPECIALTY</span>
+              <h4>CASTELVETRANO OLIVES</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 8px;">Bright green Sicilian olives cured in light brine with citrus zest & bay leaf.</p>
+              <span class="deli-use-tag">Suggested use: Aperitivo snack or pasta salad finish</span>
+              <span class="deli-details-hint">🔍 Click for details</span>
+            </div>
+
+            <div class="deli-popup-overlay" aria-hidden="true">
+              <div class="deli-popup-header">
+                <span class="eyebrow">OLIVE SPECIFICATION</span>
+                <button class="deli-popup-close" aria-label="Close details">&times;</button>
+              </div>
+              <div class="deli-popup-img-wrapper">
+                <img src="assets/images/18.png" alt="Castelvetrano Olives Pantry" class="deli-popup-img">
+              </div>
+              <h4 class="deli-popup-title">CASTELVETRANO OLIVES</h4>
+              <div class="deli-popup-body">
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Origin:</span>
+                  <span class="deli-detail-val">Castelvetrano, Sicily</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Craft:</span>
+                  <span class="deli-detail-val">Crisp, buttery, non-bitter cure tossed with orange zest & wild fennel seeds.</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Chef's Note:</span>
+                  <span class="deli-detail-val">Pair with chilled Vermentino or prosecco for an authentic Italian aperitivo.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="stage-card deli-card-interactive reveal-on-scroll" tabindex="0" aria-label="Truffle Balsamico Details">
+            <div class="deli-card-content">
+              <span class="eyebrow">ARTISAN CONDIMENT</span>
+              <h4>TRUFFLE BALSAMICO</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 8px;">Aged Modena balsamic vinegar infused with black winter truffle essence.</p>
+              <span class="deli-use-tag">Suggested use: Drizzled over Parmigiano, meats or gnocchi</span>
+              <span class="deli-details-hint">🔍 Click for details</span>
+            </div>
+
+            <div class="deli-popup-overlay" aria-hidden="true">
+              <div class="deli-popup-header">
+                <span class="eyebrow">CONDIMENT SPECIFICATION</span>
+                <button class="deli-popup-close" aria-label="Close details">&times;</button>
+              </div>
+              <div class="deli-popup-img-wrapper">
+                <img src="assets/images/19.png" alt="Truffle Aceto Balsamico" class="deli-popup-img">
+              </div>
+              <h4 class="deli-popup-title">TRUFFLE BALSAMICO</h4>
+              <div class="deli-popup-body">
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Origin:</span>
+                  <span class="deli-detail-val">Modena, Emilia-Romagna</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Craft:</span>
+                  <span class="deli-detail-val">Aged 12 years in oak barrels, infused with wild black winter truffles.</span>
+                </div>
+                <div class="deli-detail-row">
+                  <span class="deli-detail-label">Chef's Note:</span>
+                  <span class="deli-detail-val">A single light drizzle transforms potato gnocchi or Parmigiano into gourmet luxury.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DELI — SECTION 04 — BUILD YOUR DINNER (INTERACTIVE MEAL BUILDER) -->
+    <section style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">INTERACTIVE MEAL BUILDER</span>
+          <h2 class="h2-editorial">Build Your Dinner</h2>
+          <p style="margin-inline: auto;">Combine fresh pasta, house sauce, and deli finishes to shape your personalized dinner menu.</p>
+        </div>
+
+        <form id="deliMealBuilderForm" class="reveal-on-scroll">
+          <div class="builder-steps">
+            <!-- Step 01 -->
+            <div class="builder-step-card active-step">
+              <span class="eyebrow">STEP 01</span>
+              <h4>CHOOSE PASTA</h4>
+              <div class="form-group" style="margin-top: 12px; margin-bottom: 0;">
+                <select id="stepPasta" class="form-select">
+                  <option value="tagliatelle">Hand-cut Tagliatelle</option>
+                  <option value="pappardelle">Wide Pappardelle</option>
+                  <option value="orecchiette">Pugliese Orecchiette</option>
+                  <option value="gnocchi">Potato Gnocchi</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="builder-step-card active-step">
+              <span class="eyebrow">STEP 02</span>
+              <h4>CHOOSE SAUCE</h4>
+              <div class="form-group" style="margin-top: 12px; margin-bottom: 0;">
+                <select id="stepSauce" class="form-select">
+                  <option value="tomato">Slow San Marzano Tomato</option>
+                  <option value="pesto">Fresh Basil Pesto</option>
+                  <option value="garlic">Roasted Garlic Cream</option>
+                  <option value="butter">Sage & Cultured Butter</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="builder-step-card active-step">
+              <span class="eyebrow">STEP 03</span>
+              <h4>CHOOSE DELI FINISH</h4>
+              <div class="form-group" style="margin-top: 12px; margin-bottom: 0;">
+                <select id="stepFinish" class="form-select">
+                  <option value="parmigiano">Parmigiano-Reggiano & Fresh Basil</option>
+                  <option value="olives">Castelvetrano Olives & Focaccia</option>
+                  <option value="artichokes">Marinated Artichokes & Olive Oil</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Output Box -->
+          <div style="background: var(--bg-primary); border: 1px solid var(--border-color); padding: var(--space-lg); border-radius: var(--radius-md); text-align: center; margin-top: var(--space-md);">
+            <span class="eyebrow">YOUR TABLE MENU PREVIEW</span>
+            <div id="builderSummaryOutput" style="margin-block: 12px;">
+              <!-- Dynamically populated via deli.js -->
+            </div>
+            <button type="button" class="btn btn-primary" data-modal="deli" style="margin-top: 12px;">Enquire About Availability →</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- DELI — SECTION 05 — CTA -->
+    <section class="container">
+      <div class="banner-cta reveal-on-scroll">
+        <h2 class="h2-editorial" style="margin-bottom: var(--space-sm);">Drop by the Counter or Ask Us What's Fresh.</h2>
+        <p style="margin-bottom: var(--space-lg);">
+          Have questions about today's fresh pasta shapes or deli specials? Send us a quick enquiry.
+        </p>
+        <button class="btn btn-primary" data-modal="deli">Contact the Deli →</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Pasta Forma Home" style="margin-bottom: var(--space-xs);">
+            <img src="assets/images/logo.svg" alt="Pasta Forma Logo" class="logo-mark">
+            <div class="brand-text">
+              <span class="brand-name" style="color: var(--pasta-cream);">PASTA FORMA</span>
+              <span class="brand-descriptor">ARTISAN PASTA • ITALIAN DELI</span>
+            </div>
+          </a>
+          <p>
+            An independent small-batch pasta atelier producing fresh handmade pasta, house sauces, traditional deli specialties, and catering selections with Italian care.
+          </p>
+          <div class="footer-social-bar">
+            <a href="#" class="footer-social-icon" aria-label="Instagram" title="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Facebook" title="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Twitter / X" title="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="YouTube" title="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">EXPLORE</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Atelier</a></li>
+            <li><a href="home2.html">Home Pasta Bar</a></li>
+            <li><a href="products.html">Fresh Pasta & Sauces</a></li>
+            <li><a href="deli-counter.html">Deli Counter Selections</a></li>
+            <li><a href="catering.html">Catering & Events</a></li>
+            <li><a href="contact.html">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">VISIT THE ATELIER</h4>
+          <p class="footer-address">
+            <strong>Atelier Address:</strong> 142 Via Roma, Pasta District, NY 10012<br>
+            <strong>Hours:</strong> Tue – Sun | 10:00 AM – 9:00 PM<br>
+            <strong>Phone:</strong> +1 (555) 342-7278<br>
+            <strong>Email:</strong> ciao@pastaforma.com
+          </p>
+          <div style="margin-top: var(--space-sm);">
+            <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.75rem;">Get Directions →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 PASTA FORMA. Made by hand. Meant to be shared.</span>
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL MODAL BACKDROP CONTAINER -->
+  <div class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 class="h2-editorial modal-title" style="margin-bottom: var(--space-md); font-size: 1.8rem;">Enquiry Form</h3>
+      <div class="modal-body-content">
+        <!-- Content injected dynamically via modal.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/deli.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

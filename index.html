@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasta Forma | Artisan Pasta Maker & Italian Deli</title>
+  <meta name="description" content="Fresh handmade pasta, traditional house sauces, and Italian deli specialties crafted daily in small batches with care and traditional Italian craftsmanship.">
+
+  <!-- Open Graph / SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pasta Forma | Artisan Pasta Maker & Italian Deli">
+  <meta property="og:description" content="Fresh handmade pasta, house sauces & Italian deli delicacies crafted slowly by hand.">
+  <meta property="og:image" content="assets/images/hero-handmade-pasta.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="site-navbar">
+    <div class="container nav-container">
+      <!-- Logo & Brand -->
+      <a href="index.html" class="brand-logo" aria-label="Pasta Forma Home">
+        <img src="assets/images/logo.svg" alt="Pasta Forma Logo" class="logo-mark">
+        <div class="brand-text">
+          <span class="brand-name">PASTA FORMA</span>
+          <span class="brand-descriptor">ARTISAN PASTA • ITALIAN DELI</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-menu-desktop" role="menubar">
+        <li role="none"><a href="index.html" class="nav-link active" role="menuitem">Home 1</a></li>
+        <li role="none"><a href="home2.html" class="nav-link" role="menuitem">Home 2</a></li>
+        <li role="none"><a href="products.html" class="nav-link" role="menuitem">Products</a></li>
+        <li role="none"><a href="deli-counter.html" class="nav-link" role="menuitem">Deli Counter</a></li>
+        <li role="none"><a href="catering.html" class="nav-link" role="menuitem">Catering</a></li>
+        <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <!-- Desktop Controls & CTA -->
+      <div class="nav-actions-desktop">
+        <button class="control-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">🌙</button>
+        <button class="control-btn rtl-toggle-btn" title="Toggle Layout Direction" aria-label="Toggle RTL">RTL</button>
+        <button class="btn btn-primary" data-modal="order">Order Now →</button>
+      </div>
+
+      <!-- Hamburger Button (Mobile Only) -->
+      <button class="hamburger-btn" aria-label="Open Mobile Menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <span class="mobile-drawer-title">Navigation</span>
+      <button class="mobile-drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <ul class="mobile-drawer-nav">
+      <li><a href="index.html" class="mobile-nav-link active">Home 1</a></li>
+      <li><a href="home2.html" class="mobile-nav-link">Home 2</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="deli-counter.html" class="mobile-nav-link">Deli Counter</a></li>
+      <li><a href="catering.html" class="mobile-nav-link">Catering</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <div class="mobile-controls-centered">
+        <button class="control-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">🌙</button>
+        <button class="control-btn rtl-toggle-btn" title="Toggle Layout Direction" aria-label="Toggle RTL">RTL</button>
+      </div>
+      <button class="btn btn-primary" data-modal="order" style="width: 100%;">Order Now →</button>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- HOME — SECTION 01 — HERO (MILANESE PASTA BAR & ATELIER STYLE AS HOME 2) -->
+    <section class="hero-centered">
+      <div class="flour-accent"></div>
+      <div class="container reveal-on-scroll" style="max-width: 900px; z-index: 3;">
+        <span class="eyebrow" style="color: var(--tomato-red); letter-spacing: 0.3em; font-weight: 700;">MILANESE PASTA BAR & TASTING ATELIER</span>
+        <h1 class="h1-editorial" style="margin-bottom: var(--space-md);">
+          <span class="egg-yolk-text">Crafted by Hand.</span><br>Served at Our Counter.
+        </h1>
+        <p style="margin-bottom: var(--space-md); font-size: clamp(1rem, 1.2vw + 0.5rem, 1.2rem); max-width: 680px; margin-inline: auto;">
+          Step into our interactive pasta bar. Watch golden egg yolk dough rolled across wood, cut fresh to order, and paired with house-simmered passatas and vintage Italian wines.
+        </p>
+        <div class="hero-actions-centered">
+          <button class="btn btn-primary" data-modal="order">Reserve Counter Seat →</button>
+          <a href="products.html" class="btn btn-secondary" style="color: var(--pasta-cream); border-color: rgba(244, 233, 210, 0.4);">Browse Fresh Cuts →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME — SECTION 02 — THE HANDMADE STORY -->
+    <section style="background-color: var(--bg-secondary);">
+      <div class="container story-grid">
+        <div class="hero-image-wrapper reveal-on-scroll" style="aspect-ratio: 16 / 10;">
+          <img src="assets/images/2.png" alt="Close-up of fresh egg pasta dough being rolled through traditional metal rollers" loading="lazy">
+        </div>
+        <div class="story-card-overlay reveal-on-scroll">
+          <span class="eyebrow">THE ART OF FRESH PASTA</span>
+          <h2 class="h2-editorial" style="margin-bottom: var(--space-sm);">Every sheet begins with dough, time and a practiced hand.</h2>
+          <p style="margin-bottom: var(--space-sm);">
+            We prepare our dough every morning using 100% durum wheat semolina flour and fresh pasture eggs. The dough rests to allow the gluten to soften before being hand-rolled and cut through classic brass dies.
+          </p>
+          <div class="craft-marker-list">
+            <span class="craft-step">MIX</span>
+            <span class="craft-step">REST</span>
+            <span class="craft-step">ROLL</span>
+            <span class="craft-step">SHAPE</span>
+            <span class="craft-step">SERVE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME — SECTION 03 — PASTA AT A GLANCE (INTERACTIVE PASTA SELECTOR) -->
+    <section>
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">THE ATELIER SELECTION</span>
+          <h2 class="h2-editorial">Choose Your Shape</h2>
+          <p style="margin-inline: auto;">Select a handcrafted pasta shape to explore its culinary story and recommended sauce pairings.</p>
+        </div>
+
+        <!-- Horizontal Tabs Nav -->
+        <div class="pasta-tabs-nav reveal-on-scroll" role="tablist" aria-label="Pasta Shapes">
+          <button class="pasta-tab-btn active" data-shape="tagliatelle" role="tab" aria-selected="true">Tagliatelle</button>
+          <button class="pasta-tab-btn" data-shape="pappardelle" role="tab" aria-selected="false">Pappardelle</button>
+          <button class="pasta-tab-btn" data-shape="ravioli" role="tab" aria-selected="false">Ravioli</button>
+          <button class="pasta-tab-btn" data-shape="orecchiette" role="tab" aria-selected="false">Orecchiette</button>
+          <button class="pasta-tab-btn" data-shape="gnocchi" role="tab" aria-selected="false">Gnocchi</button>
+        </div>
+
+        <!-- Display Panel -->
+        <div class="pasta-display-panel reveal-on-scroll">
+          <div>
+            <span class="eyebrow pasta-display-eyebrow">LONG EGG RIBBONS</span>
+            <h3 class="h2-editorial pasta-display-title" style="margin-bottom: var(--space-sm);">Tagliatelle</h3>
+            <p class="pasta-display-desc" style="margin-bottom: var(--space-md);">
+              Hand-rolled and cut into silky, golden ribbons. Made with 100% durum wheat semolina and rich egg yolks for a porous texture that holds rich sauces.
+            </p>
+            <div style="background: var(--bg-primary); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--tomato-red);">
+              <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--tomato-red); display: block; margin-bottom: 4px;">RECOMMENDED PAIRING</span>
+              <p class="pasta-display-best" style="font-size: 0.9rem; margin: 0; color: var(--text-primary);">
+                Slow-cooked wild boar ragù, traditional Bolognese, or rich creamy mushroom reductions.
+              </p>
+            </div>
+            <div style="margin-top: var(--space-md);">
+              <a href="products.html" class="btn btn-primary">Browse All Shapes →</a>
+            </div>
+          </div>
+          <div style="position: relative;">
+            <span class="pasta-display-tag" style="position: absolute; top: 12px; right: 12px; background: var(--olive-charcoal); color: var(--pasta-cream); font-size: 0.75rem; padding: 4px 10px; border-radius: 20px; font-weight: 600; z-index: 2;">Fresh Egg Pasta</span>
+            <img class="pasta-display-img" src="assets/images/3.png" alt="Fresh Tagliatelle Pasta" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME — SECTION 04 — FROM PASTA TO PLATE -->
+    <section style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">THE CRAFT JOURNEY</span>
+          <h2 class="h2-editorial">From Pasta to Plate</h2>
+          <p style="margin-inline: auto;">Four harmonious steps that transform raw ingredients into an authentic Italian dining experience.</p>
+        </div>
+
+        <div class="timeline-stages">
+          <div class="stage-card reveal-on-scroll">
+            <span class="stage-number">01</span>
+            <h4>FRESH PASTA</h4>
+            <p style="font-size: 0.9rem;">Hand-kneaded dough cut into classic shapes daily.</p>
+          </div>
+          <div class="stage-card reveal-on-scroll">
+            <span class="stage-number">02</span>
+            <h4>HOUSE SAUCE</h4>
+            <p style="font-size: 0.9rem;">San Marzano tomatoes simmered with fresh basil and garlic.</p>
+          </div>
+          <div class="stage-card reveal-on-scroll">
+            <span class="stage-number">03</span>
+            <h4>DELI FINISHES</h4>
+            <p style="font-size: 0.9rem;">Aged Parmigiano-Reggiano and cold-pressed extra virgin olive oil.</p>
+          </div>
+          <div class="stage-card reveal-on-scroll">
+            <span class="stage-number">04</span>
+            <h4>YOUR TABLE</h4>
+            <p style="font-size: 0.9rem;">Meant to be shared slowly with family and warm company.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME — SECTION 05 — TODAY AT THE DELI -->
+    <section>
+      <div class="container deli-feature-grid">
+        <div class="hero-image-wrapper reveal-on-scroll" style="aspect-ratio: 4 / 3;">
+          <img src="assets/images/4.png" alt="Authentic Italian deli counter display with cheeses and fresh pasta" loading="lazy">
+        </div>
+        <div class="reveal-on-scroll">
+          <span class="eyebrow">NEIGHBORHOOD DELI COUNTER</span>
+          <h2 class="h2-editorial" style="margin-bottom: var(--space-sm);">Take the Taste of the Atelier Home</h2>
+          <p style="margin-bottom: var(--space-md);">
+            Discover fresh pasta, house-prepared sauces, imported cheeses, marinated olives, and specialty Italian pantry staples prepared for easy dining at home.
+          </p>
+
+          <h4 style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--tomato-red);">TODAY'S COUNTER SELECTION</h4>
+          <ul class="deli-list">
+            <li class="deli-list-item">
+              <span>Fresh Tagliatelle & Pappardelle</span>
+              <span class="deli-list-tag">Fresh Daily</span>
+            </li>
+            <li class="deli-list-item">
+              <span>Slow-Simmered Tomato Sugo (500ml)</span>
+              <span class="deli-list-tag">House Sauce</span>
+            </li>
+            <li class="deli-list-item">
+              <span>24-Month Aged Parmigiano-Reggiano</span>
+              <span class="deli-list-tag">Imported Cheese</span>
+            </li>
+            <li class="deli-list-item">
+              <span>Marinated Artichokes & Castelvetrano Olives</span>
+              <span class="deli-list-tag">Antipasti</span>
+            </li>
+          </ul>
+
+          <div style="margin-top: var(--space-lg);">
+            <a href="deli-counter.html" class="btn btn-primary">Explore the Deli Counter →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME 1 — SECTION 05.5 — COMMUNITY & DELI TESTIMONIALS -->
+    <section style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">COMMUNITY & DELI LOVERS</span>
+          <h2 class="h2-editorial">Loved by Fresh Pasta Enthusiasts</h2>
+          <p style="margin-inline: auto;">Read stories from local home chefs, neighborhood food lovers, and families who enjoy our daily fresh cuts.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div>
+              <span class="testimonial-badge">HOME CHEF FAVORITE</span>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                "Picking up fresh tagliatelle and house tomato sugo on my way home from work has completely transformed our weeknight dinners. Tastes like a 5-star trattoria in minutes."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A</div>
+              <div class="testimonial-meta">
+                <span class="testimonial-name">Alessandra Rossi</span>
+                <span class="testimonial-role">Local Resident & Home Cook</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div>
+              <span class="testimonial-badge">ARTISAN DELI PATRON</span>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                "The 24-month Parmigiano-Reggiano and house-prepared wild boar ragù are unmatched. Pasta Forma is hands down the finest artisan Italian deli in the city."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">L</div>
+              <div class="testimonial-meta">
+                <span class="testimonial-name">Luca & Clara Bennett</span>
+                <span class="testimonial-role">Neighborhood Regulars</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div>
+              <span class="testimonial-badge">FAMILY DINNER</span>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                "Their lemon ricotta ravioli with sage brown butter was the star of our Sunday family dinner. You can truly taste the craftsmanship in every single bite."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">S</div>
+              <div class="testimonial-meta">
+                <span class="testimonial-name">Stefano De Luca</span>
+                <span class="testimonial-role">Culinary Enthusiast</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME — SECTION 06 — FINAL BANNER CTA -->
+    <section class="container">
+      <div class="banner-cta reveal-on-scroll">
+        <span class="eyebrow" style="color: var(--pasta-cream); opacity: 0.8;">ATELIER ENQUIRIES</span>
+        <h2 class="h2-editorial" style="margin-bottom: var(--space-sm);">Bring Handmade Pasta to the Table.</h2>
+        <p style="margin-bottom: var(--space-lg);">
+          Order fresh pasta for home, enquire about daily deli selections, or plan something special for your upcoming gathering.
+        </p>
+        <div style="display: flex; justify-content: center; gap: var(--space-sm); flex-wrap: wrap;">
+          <a href="products.html" class="btn btn-primary">Browse Products →</a>
+          <a href="catering.html" class="btn btn-secondary" style="color: var(--pasta-cream); border-color: rgba(244, 233, 210, 0.4);">Catering Enquiry →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Pasta Forma Home" style="margin-bottom: var(--space-xs);">
+            <img src="assets/images/logo.svg" alt="Pasta Forma Logo" class="logo-mark">
+            <div class="brand-text">
+              <span class="brand-name" style="color: var(--pasta-cream);">PASTA FORMA</span>
+              <span class="brand-descriptor">ARTISAN PASTA • ITALIAN DELI</span>
+            </div>
+          </a>
+          <p>
+            An independent small-batch pasta atelier producing fresh handmade pasta, house sauces, traditional deli specialties, and catering selections with Italian care.
+          </p>
+          <div class="footer-social-bar">
+            <a href="#" class="footer-social-icon" aria-label="Instagram" title="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Facebook" title="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Twitter / X" title="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="YouTube" title="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">EXPLORE</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Atelier</a></li>
+            <li><a href="home2.html">Home Pasta Bar</a></li>
+            <li><a href="products.html">Fresh Pasta & Sauces</a></li>
+            <li><a href="deli-counter.html">Deli Counter Selections</a></li>
+            <li><a href="catering.html">Catering & Events</a></li>
+            <li><a href="contact.html">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">VISIT THE ATELIER</h4>
+          <p class="footer-address">
+            <strong>Atelier Address:</strong> 142 Via Roma, Pasta District, NY 10012<br>
+            <strong>Hours:</strong> Tue – Sun | 10:00 AM – 9:00 PM<br>
+            <strong>Phone:</strong> +1 (555) 342-7278<br>
+            <strong>Email:</strong> ciao@pastaforma.com
+          </p>
+          <div style="margin-top: var(--space-sm);">
+            <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.75rem;">Get Directions →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 PASTA FORMA. Made by hand. Meant to be shared.</span>
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL MODAL BACKDROP CONTAINER -->
+  <div class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 class="h2-editorial modal-title" style="margin-bottom: var(--space-md); font-size: 1.8rem;">Enquiry Form</h3>
+      <div class="modal-body-content">
+        <!-- Content injected dynamically via modal.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

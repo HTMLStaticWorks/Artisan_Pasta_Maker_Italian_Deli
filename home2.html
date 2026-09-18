@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasta Bar & Atelier Experience | Home 2 | Pasta Forma</title>
+  <meta name="description" content="Step into the Pasta Forma Milanese Pasta Bar & Atelier Experience. Fresh egg yolk pasta, small batch sauces, and intimate counter dining.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Open Graph / SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pasta Bar & Atelier Experience | Home 2 | Pasta Forma">
+  <meta property="og:description" content="Experience our interactive pasta bar & fresh egg yolk atelier.">
+  <meta property="og:image" content="assets/images/pasta-dough-process.webp">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Home 2 Unique Layout Styling */
+    .home2-hero {
+      margin-top: 72px; /* Offset for fixed navbar */
+      height: calc(100vh - 72px);
+      height: calc(100dvh - 72px);
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      background: linear-gradient(rgba(12, 18, 15, 0.45), rgba(12, 18, 15, 0.62)), url('assets/images/12.png') center/cover no-repeat;
+      color: var(--pasta-cream);
+      padding-block: clamp(1rem, 3vh, 2.5rem);
+      padding-inline: var(--space-md);
+      border-bottom: 1px solid var(--border-color);
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .home2-hero h1, .home2-hero p {
+      color: var(--pasta-cream);
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.65);
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-lg);
+      margin-top: var(--space-xl);
+    }
+
+    .pillar-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-top: 4px solid var(--tomato-red);
+      padding: var(--space-xl) var(--space-md) var(--space-lg);
+      border-radius: var(--radius-md);
+      text-align: center;
+      position: relative;
+      transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+      box-shadow: 0 4px 16px rgba(38, 53, 43, 0.04);
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--tomato-red);
+      box-shadow: 0 12px 30px rgba(166, 61, 50, 0.18);
+    }
+
+    .pillar-stat {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 3.5vw, 3.2rem);
+      font-weight: 700;
+      color: var(--tomato-red);
+      line-height: 1;
+      margin-bottom: var(--space-xs);
+      letter-spacing: -0.02em;
+    }
+
+    .tasting-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-lg);
+      margin-top: var(--space-xl);
+    }
+
+    .tasting-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .tasting-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(38, 53, 43, 0.12);
+    }
+
+    .wine-bar-banner-fullscreen {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      background: linear-gradient(to right, rgba(15, 22, 18, 0.88) 0%, rgba(15, 22, 18, 0.65) 50%, rgba(15, 22, 18, 0.4) 100%), url('assets/images/italian-deli-counter.webp') center/cover no-repeat fixed;
+      color: var(--pasta-cream);
+      padding-block: clamp(4rem, 10vh, 7rem);
+      margin-block: var(--space-xl);
+      border-block: 1px solid var(--border-color);
+      box-sizing: border-box;
+    }
+
+    .wine-bar-banner-fullscreen h2, .wine-bar-banner-fullscreen p {
+      color: var(--pasta-cream);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="site-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Pasta Forma Home">
+        <img src="assets/images/logo.svg" alt="Pasta Forma Logo" class="logo-mark">
+        <div class="brand-text">
+          <span class="brand-name">PASTA FORMA</span>
+          <span class="brand-descriptor">ARTISAN PASTA • ITALIAN DELI</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-menu-desktop" role="menubar">
+        <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home 1</a></li>
+        <li role="none"><a href="home2.html" class="nav-link active" role="menuitem">Home 2</a></li>
+        <li role="none"><a href="products.html" class="nav-link" role="menuitem">Products</a></li>
+        <li role="none"><a href="deli-counter.html" class="nav-link" role="menuitem">Deli Counter</a></li>
+        <li role="none"><a href="catering.html" class="nav-link" role="menuitem">Catering</a></li>
+        <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <!-- Desktop Controls & CTA -->
+      <div class="nav-actions-desktop">
+        <button class="control-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">🌙</button>
+        <button class="control-btn rtl-toggle-btn" title="Toggle Layout Direction" aria-label="Toggle RTL">RTL</button>
+        <button class="btn btn-primary" data-modal="order">Order Now →</button>
+      </div>
+
+      <!-- Hamburger Button (Mobile Only) -->
+      <button class="hamburger-btn" aria-label="Open Mobile Menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <span class="mobile-drawer-title">Navigation</span>
+      <button class="mobile-drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <ul class="mobile-drawer-nav">
+      <li><a href="index.html" class="mobile-nav-link">Home 1</a></li>
+      <li><a href="home2.html" class="mobile-nav-link active">Home 2</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="deli-counter.html" class="mobile-nav-link">Deli Counter</a></li>
+      <li><a href="catering.html" class="mobile-nav-link">Catering</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <div class="mobile-controls-centered">
+        <button class="control-btn theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">🌙</button>
+        <button class="control-btn rtl-toggle-btn" title="Toggle Layout Direction" aria-label="Toggle RTL">RTL</button>
+      </div>
+      <button class="btn btn-primary" data-modal="order" style="width: 100%;">Order Now →</button>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- HOME 2 — SECTION 01 — FULLSCREEN MILANESE PASTA BAR HERO -->
+    <section class="home2-hero">
+      <div class="flour-accent"></div>
+      <div class="container reveal-on-scroll" style="max-width: 900px; z-index: 3;">
+        <span class="eyebrow" style="color: var(--pasta-cream); background: rgba(15, 22, 18, 0.7); padding: 6px 18px; border-radius: 20px; border: 1px solid rgba(244, 233, 210, 0.35); letter-spacing: 0.15em; font-weight: 700; display: inline-block;">THE PASTA BAR & WINE TASTING ATELIER</span>
+        <h1 class="h1-editorial" style="margin-bottom: var(--space-md);">
+          <span class="egg-yolk-text">Rolled at the Counter.</span><br>Paired at Your Table.
+        </h1>
+        <p style="margin-bottom: var(--space-md); font-size: clamp(1rem, 1.2vw + 0.5rem, 1.2rem); max-width: 680px; margin-inline: auto;">
+          Experience Milanese counter dining. Watch hand-cut egg ribbons paired with 4-hour copper passatas and sommelier-curated natural Italian vintages.
+        </p>
+        <div class="hero-actions-centered">
+          <button class="btn btn-primary" data-modal="order">Reserve Tasting Seat →</button>
+          <a href="#tasting-counter" class="btn btn-secondary" style="color: var(--pasta-cream); border-color: rgba(244, 233, 210, 0.4);">Explore Tasting Menu →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME 2 — SECTION 02 — THE 4 GOLDEN ATELIER PILLARS -->
+    <section style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">OUR UNCOMPROMISING STANDARDS</span>
+          <h2 class="h2-editorial">The Four Golden Atelier Pillars</h2>
+          <p style="margin-inline: auto;">Every batch of pasta produced at our counter adheres strictly to four old-world principles.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card reveal-on-scroll">
+            <div class="pillar-stat">40</div>
+            <h4 style="margin-bottom: 6px;">EGG YOLKS / KG</h4>
+            <p style="font-size: 0.88rem;">Fresh pasture yolk dough producing a silky golden color and luxurious bite.</p>
+          </div>
+
+          <div class="pillar-card reveal-on-scroll">
+            <div class="pillar-stat">100%</div>
+            <h4 style="margin-bottom: 6px;">STONE-GROUND</h4>
+            <p style="font-size: 0.88rem;">Selected durum semolina flour harvested from southern Italian wheat fields.</p>
+          </div>
+
+          <div class="pillar-card reveal-on-scroll">
+            <div class="pillar-stat">BRASS</div>
+            <h4 style="margin-bottom: 6px;">DIE EXTRUSION</h4>
+            <p style="font-size: 0.88rem;">Hand-extruded through vintage brass dies for a porous, sauce-clinging surface.</p>
+          </div>
+
+          <div class="pillar-card reveal-on-scroll">
+            <div class="pillar-stat">24 HR</div>
+            <h4 style="margin-bottom: 6px;">AIR CURING</h4>
+            <p style="font-size: 0.88rem;">Gently rested on wooden drying frames to preserve natural aroma and texture.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME 2 — SECTION 03 — LIVE ATELIER STORY -->
+    <section>
+      <div class="container story-grid">
+        <div class="hero-image-wrapper reveal-on-scroll" style="aspect-ratio: 4 / 3;">
+          <img src="assets/images/26.png" alt="Fresh pasta shapes on linen cloth" loading="lazy">
+        </div>
+        <div class="story-card-overlay reveal-on-scroll">
+          <span class="eyebrow">THE COUNTER EXPERIENCE</span>
+          <h2 class="h2-editorial" style="margin-bottom: var(--space-sm);">Watch the Alchemy of Flour & Yolks</h2>
+          <p style="margin-bottom: var(--space-md);">
+            At our counter, pasta making is an active performance. Guests observe master sfogliatrici rolling paper-thin sheets before cutting fresh ribbons directly into boiling salted water.
+          </p>
+          <div class="craft-marker-list">
+            <span class="craft-step">KNEAD</span>
+            <span class="craft-step">STRETCH</span>
+            <span class="craft-step">CUT</span>
+            <span class="craft-step">SIMMER</span>
+            <span class="craft-step">SAVOR</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME 2 — SECTION 04 — THE CHEF'S PASTA TASTING MENU -->
+    <section id="tasting-counter" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">TASTING MENU HIGHLIGHTS</span>
+          <h2 class="h2-editorial">The Pasta Bar Menu</h2>
+          <p style="margin-inline: auto;">Curated daily shapes served at peak freshness with paired Italian house sauces.</p>
+        </div>
+
+        <div class="tasting-grid">
+          <!-- Dish 1 -->
+          <div class="tasting-card reveal-on-scroll">
+            <div style="aspect-ratio: 4/3; overflow: hidden;">
+              <img src="assets/images/6.png" alt="Tagliatelle dish" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="tasting-card-body">
+              <span class="eyebrow">HOUSE SPECIALTY</span>
+              <h3 class="h3-editorial">Tagliatelle al Ragù</h3>
+              <p style="font-size: 0.88rem;">Hand-cut egg ribbons tossed in 6-hour slow simmered wild boar soffritto passata.</p>
+              <span class="tasting-card-pair">Paired with: Natural Chianti Classico</span>
+            </div>
+          </div>
+
+          <!-- Dish 2 -->
+          <div class="tasting-card reveal-on-scroll">
+            <div style="aspect-ratio: 4/3; overflow: hidden;">
+              <img src="assets/images/7.png" alt="Pappardelle dish" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="tasting-card-body">
+              <span class="eyebrow">CREAM & SAGE</span>
+              <h3 class="h3-editorial">Pappardelle Aglio e Crema</h3>
+              <p style="font-size: 0.88rem;">Broad ribbons bathed in roasted garlic sweet cream and crisp mountain sage.</p>
+              <span class="tasting-card-pair">Paired with: Soave Classico</span>
+            </div>
+          </div>
+
+          <!-- Dish 3 -->
+          <div class="tasting-card reveal-on-scroll">
+            <div style="aspect-ratio: 4/3; overflow: hidden;">
+              <img src="assets/images/8.png" alt="Ravioli dish" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div class="tasting-card-body">
+              <span class="eyebrow">STUFFED ATELIER</span>
+              <h3 class="h3-editorial">Ravioli Ricotta e Limone</h3>
+              <p style="font-size: 0.88rem;">Sheep milk ricotta and lemon zest filled pillows with brown butter sauce.</p>
+              <span class="tasting-card-pair">Paired with: Vermentino di Sardegna</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME 2 — SECTION 04.5 — SOMMELIER'S PASTA & WINE PAIRING MATRIX (UNIQUE SECTION) -->
+    <section>
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">SOMMELIER & CHEF COLLABORATION</span>
+          <h2 class="h2-editorial">The Wine & Pasta Pairing Matrix</h2>
+          <p style="margin-inline: auto;">Explore how our master sfogliatrici and sommelier pair hand-cut pasta shapes with natural Italian vintages.</p>
+        </div>
+
+        <div class="pairing-matrix-wrapper reveal-on-scroll">
+          <!-- Pairing Nav Tabs -->
+          <div class="pairing-tabs-nav" role="tablist" aria-label="Wine and Pasta Pairings">
+            <button class="pairing-tab-btn active" data-pair="ragu" role="tab" aria-selected="true">Tagliatelle & Chianti</button>
+            <button class="pairing-tab-btn" data-pair="ricotta" role="tab" aria-selected="false">Ravioli & Vermentino</button>
+            <button class="pairing-tab-btn" data-pair="gnocchi" role="tab" aria-selected="false">Gnocchi & Nebbiolo</button>
+            <button class="pairing-tab-btn" data-pair="sage" role="tab" aria-selected="false">Pappardelle & Soave</button>
+          </div>
+
+          <!-- Pairing Display Card -->
+          <div class="pairing-display-card">
+            <div>
+              <span class="pairing-wine-badge">🍷 NATURAL VINTAGE PAIRING</span>
+              <h3 class="h2-editorial pairing-wine-title" style="margin-top: 4px; margin-bottom: var(--space-xs);">Chianti Classico Riserva DOCG 2019</h3>
+              <p class="pairing-dish-subtitle" style="font-size: 0.9rem; font-weight: 700; color: var(--tomato-red); margin-bottom: var(--space-sm);">Paired with: Tagliatelle al Ragù di Cinghiale</p>
+              <p class="pairing-desc" style="margin-bottom: var(--space-md); font-size: 0.95rem;">
+                The vibrant acidity and firm, rustic tannins of wild Sangiovese grapes cut effortlessly through the rich, slow-simmered fats of Tuscan wild boar ragù.
+              </p>
+              
+              <div style="background: var(--bg-card); padding: 14px; border-radius: var(--radius-sm); border-left: 3px solid var(--tomato-red);">
+                <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--tomato-red); display: block; margin-bottom: 2px;">SOMMELIER TASTING NOTES</span>
+                <p class="pairing-tasting-notes" style="font-size: 0.88rem; margin: 0; color: var(--text-primary);">
+                  Ripe sour cherry, crushed violets, dried thyme, and toasted oak with a long, savory mineral finish.
+                </p>
+              </div>
+
+              <div class="pairing-stats-grid">
+                <div class="pairing-stat-item">
+                  <span class="pairing-stat-value pairing-stat-region">Tuscany</span>
+                  <span class="pairing-stat-label">ORIGIN</span>
+                </div>
+                <div class="pairing-stat-item">
+                  <span class="pairing-stat-value pairing-stat-temp">16° – 18°C</span>
+                  <span class="pairing-stat-label">SERVING TEMP</span>
+                </div>
+                <div class="pairing-stat-item">
+                  <span class="pairing-stat-value pairing-stat-grape">Sangiovese</span>
+                  <span class="pairing-stat-label">VARIETAL</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="position: relative; border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4 / 3;">
+              <img class="pairing-img" src="assets/images/3.png" alt="Tagliatelle and Wine Pairing" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME 2 — SECTION 05 — EVENINGS AT THE PASTA BAR (FULLSCREEN FIXED PARALLAX SECTION) -->
+    <section class="wine-bar-banner-fullscreen">
+      <div class="container reveal-on-scroll" style="text-align: center;">
+        <div style="max-width: 680px; margin-inline: auto; text-align: center;">
+          <span class="eyebrow" style="color: var(--tomato-red); letter-spacing: 0.3em; font-weight: 700; display: inline-block;">EVENINGS AT THE DELI COUNTER</span>
+          <h2 class="h2-editorial" style="margin-bottom: var(--space-sm);">Aperitivo, Natural Wines & Fresh Pasta</h2>
+          <p style="margin-bottom: var(--space-lg); font-size: 1.1rem; line-height: 1.7; opacity: 0.95; margin-inline: auto;">
+            As dusk settles, our atelier transitions into an intimate pasta bar. Pair freshly cut pasta with artisan Parmigiano wheels, marinated olives, and hand-selected Italian wines.
+          </p>
+          <button class="btn btn-primary" data-modal="deli">Enquire About Evening Counter Reservations →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME 2 — SECTION 05.5 — GUEST VOICES & TESTIMONIALS (TESTIMONIALS SECTION) -->
+    <section style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="selector-header reveal-on-scroll">
+          <span class="eyebrow">ACCLAIM & COMMUNITY VOICES</span>
+          <h2 class="h2-editorial">Words From Our Counter Guests</h2>
+          <p style="margin-inline: auto;">Reflections from food writers, culinary guides, and regular patrons who dine at our pasta counter.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div>
+              <span class="testimonial-badge">CRITIC REVIEW</span>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                "Watching the sfogliatrice knead 40-yolk dough before your eyes, then tasting the Tagliatelle al Ragù seconds later is pure magic. Easily the most authentic pasta experience in the city."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">E</div>
+              <div class="testimonial-meta">
+                <span class="testimonial-name">Elena Rostova</span>
+                <span class="testimonial-role">Food Critic, Gambero Rosso Guide</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div>
+              <span class="testimonial-badge">WEEKLY REGULAR</span>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                "The texture of their brass-die Pappardelle with cream and sage is unforgettable. Every Friday evening at the wine bar counter feels like being transported to Emilia-Romagna."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div class="testimonial-meta">
+                <span class="testimonial-name">Marco & Sofia Moretti</span>
+                <span class="testimonial-role">Neighborhood Regulars</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div>
+              <span class="testimonial-badge">PRIVATE TASTING</span>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                "We reserved the counter for a private anniversary tasting. Watching master pasta makers shape delicate lemon ricotta ravioli live was the highlight of our year."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">G</div>
+              <div class="testimonial-meta">
+                <span class="testimonial-name">Giuseppe Vance</span>
+                <span class="testimonial-role">Private Dining Guest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME 2 — SECTION 06 — ATELIER RESERVATIONS & ENQUIRY BANNER -->
+    <section class="container">
+      <div class="banner-cta reveal-on-scroll">
+        <h2 class="h2-editorial" style="margin-bottom: var(--space-sm);">Reserve Your Seat at the Pasta Bar.</h2>
+        <p style="margin-bottom: var(--space-lg);">
+          Experience fresh handmade pasta prepared right before your eyes. Inquire for counter reservations or private group tastings.
+        </p>
+        <div style="display: flex; justify-content: center; gap: var(--space-sm); flex-wrap: wrap;">
+          <button class="btn btn-primary" data-modal="order">Reserve Counter Seat →</button>
+          <a href="catering.html" class="btn btn-secondary" style="color: var(--pasta-cream); border-color: rgba(244, 233, 210, 0.4);">Private Group Catering →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Pasta Forma Home" style="margin-bottom: var(--space-xs);">
+            <img src="assets/images/logo.svg" alt="Pasta Forma Logo" class="logo-mark">
+            <div class="brand-text">
+              <span class="brand-name" style="color: var(--pasta-cream);">PASTA FORMA</span>
+              <span class="brand-descriptor">ARTISAN PASTA • ITALIAN DELI</span>
+            </div>
+          </a>
+          <p>
+            An independent small-batch pasta atelier producing fresh handmade pasta, house sauces, traditional deli specialties, and catering selections with Italian care.
+          </p>
+          <div class="footer-social-bar">
+            <a href="#" class="footer-social-icon" aria-label="Instagram" title="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Facebook" title="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Twitter / X" title="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="YouTube" title="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">EXPLORE</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Atelier</a></li>
+            <li><a href="home2.html">Home Pasta Bar</a></li>
+            <li><a href="products.html">Fresh Pasta & Sauces</a></li>
+            <li><a href="deli-counter.html">Deli Counter Selections</a></li>
+            <li><a href="catering.html">Catering & Events</a></li>
+            <li><a href="contact.html">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">VISIT THE ATELIER</h4>
+          <p class="footer-address">
+            <strong>Atelier Address:</strong> 142 Via Roma, Pasta District, NY 10012<br>
+            <strong>Hours:</strong> Tue – Sun | 10:00 AM – 9:00 PM<br>
+            <strong>Phone:</strong> +1 (555) 342-7278<br>
+            <strong>Email:</strong> ciao@pastaforma.com
+          </p>
+          <div style="margin-top: var(--space-sm);">
+            <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.75rem;">Get Directions →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 PASTA FORMA. Made by hand. Meant to be shared.</span>
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL MODAL BACKDROP CONTAINER -->
+  <div class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 class="h2-editorial modal-title" style="margin-bottom: var(--space-md); font-size: 1.8rem;">Enquiry Form</h3>
+      <div class="modal-body-content">
+        <!-- Content injected dynamically via modal.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
