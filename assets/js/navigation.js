@@ -111,17 +111,42 @@
     });
   }
 
-  // Highlight Active Page Link
+  // Highlight Active Page Link & Manage Dropdowns
   function highlightActiveLink() {
     const currentPath = window.location.pathname;
-    document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
+
+    const isHome1 = currentPath.endsWith('index.html') || currentPath === '/' || currentPath.endsWith('/') || currentPath.endsWith('\\index.html');
+    const isHome2 = currentPath.endsWith('home2.html');
+    const isHome = isHome1 || isHome2;
+
+    // Highlight desktop links & mobile drawer links
+    document.querySelectorAll('.nav-link, .dropdown-link, .mobile-nav-link').forEach(link => {
       const href = link.getAttribute('href');
-      if (href && (currentPath.endsWith(href) || (href === 'index.html' && (currentPath === '/' || currentPath.endsWith('/'))))) {
-        link.classList.add('active');
-        link.setAttribute('aria-current', 'page');
-      } else {
-        link.classList.remove('active');
-        link.removeAttribute('aria-current');
+      if (href) {
+        if ((isHome1 && href === 'index.html') || (isHome2 && href === 'home2.html') || (!isHome && currentPath.endsWith(href))) {
+          link.classList.add('active');
+          link.setAttribute('aria-current', 'page');
+        } else {
+          link.classList.remove('active');
+          link.removeAttribute('aria-current');
+        }
+      }
+    });
+
+        // Parent dropdown triggers active state if any child link inside is active
+    document.querySelectorAll('.nav-dropdown, .mobile-nav-dropdown').forEach(dropdown => {
+      const toggle = dropdown.querySelector('.dropdown-toggle, .mobile-nav-toggle');
+      const activeChild = dropdown.querySelector('.dropdown-link.active, .mobile-nav-link.active');
+      if (toggle) {
+        if (activeChild) {
+          toggle.classList.add('active');
+          if (dropdown.classList.contains('mobile-nav-dropdown')) {
+            dropdown.classList.add('is-open');
+            toggle.setAttribute('aria-expanded', 'true');
+          }
+        } else {
+          toggle.classList.remove('active');
+        }
       }
     });
   }
