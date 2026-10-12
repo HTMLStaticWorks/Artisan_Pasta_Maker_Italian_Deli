@@ -776,7 +776,7 @@ section {
   justify-content: center;
   text-align: center;
   position: relative;
-  background: linear-gradient(rgba(12, 18, 15, 0.60), rgba(12, 18, 15, 0.78)), url('../images/1.png') center/cover no-repeat;
+  background: linear-gradient(rgba(12, 18, 15, 0.55), rgba(12, 18, 15, 0.75)), url('../images/hero-artisan-pasta.jpg') center/cover no-repeat;
   color: var(--pasta-cream);
   padding-block: clamp(1rem, 3vh, 2.5rem);
   padding-inline: var(--space-md);
@@ -1842,6 +1842,16 @@ html[dir="rtl"] .modal-close-btn {
   .story-card-overlay {
     margin-inline-start: 0;
     margin-top: -30px;
+  }
+
+  .story-media {
+    order: 1;
+    width: 100%;
+  }
+
+  .story-content {
+    order: 2;
+    width: 100%;
   }
 
   html[dir="rtl"] .story-card-overlay {
