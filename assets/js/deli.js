@@ -54,8 +54,8 @@
 
     cards.forEach(card => {
       card.addEventListener('click', function (e) {
-        // Prevent trigger if clicking an inner link or button
-        if (e.target.closest('a') || e.target.closest('button')) return;
+        // Prevent trigger if clicking an inner link or popup close button
+        if (e.target.closest('a') || e.target.closest('.deli-popup-close')) return;
 
         const popupData = card.querySelector('.deli-popup-overlay');
         if (!popupData) return;

@@ -17,6 +17,25 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .package-title {
+      min-height: 2.7em !important;
+      margin-bottom: 6px !important;
+      display: block;
+    }
+    .package-desc {
+      min-height: 4.5em !important;
+      line-height: 1.5 !important;
+      margin-bottom: 12px !important;
+      display: block;
+    }
+    @media (max-width: 767px) {
+      .package-title,
+      .package-desc {
+        min-height: auto !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -43,7 +62,7 @@
         </li>
         <li role="none"><a href="about.html" class="nav-link" role="menuitem">About Us</a></li>
         <li role="none"><a href="products.html" class="nav-link" role="menuitem">Products</a></li>
-        <li role="none"><a href="deli-counter.html" class="nav-link" role="menuitem">Italian Deli</a></li>
+        <li role="none"><a href="deli-counter.html" class="nav-link" role="menuitem">Services</a></li>
         <li role="none" class="nav-dropdown">
           <a href="case-studies.html" class="nav-link dropdown-toggle" role="menuitem" aria-haspopup="true" aria-expanded="false">
             Experience <span class="nav-caret">▾</span>
@@ -92,7 +111,7 @@
       </li>
       <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
       <li><a href="products.html" class="mobile-nav-link">Products</a></li>
-      <li><a href="deli-counter.html" class="mobile-nav-link">Italian Deli</a></li>
+      <li><a href="deli-counter.html" class="mobile-nav-link">Services</a></li>
       <li class="mobile-nav-dropdown">
         <button class="mobile-nav-toggle" aria-expanded="false">
           <span>Experience</span>
@@ -186,8 +205,8 @@
                 <span class="package-badge">4 – 10 GUESTS</span>
               </div>
               <span class="eyebrow">INTIMATE DINING</span>
-              <h3 class="h3-editorial" style="margin-bottom: 6px;">THE ATELIER TABLE</h3>
-              <p style="font-size: 0.9rem; color: var(--text-muted);">An elegant 3-course private dining experience centered around artisan egg ribbons and delicate filled ravioli.</p>
+              <h3 class="h3-editorial package-title" style="min-height: 2.7em; margin-bottom: 6px;">THE ATELIER TABLE</h3>
+              <p class="package-desc" style="font-size: 0.9rem; color: var(--text-muted); min-height: 4.5em; line-height: 1.5; margin-bottom: 12px;">An elegant 3-course private dining experience centered around artisan egg ribbons and delicate filled ravioli.</p>
 
               <ul class="package-menu-list">
                 <li>Hand-cut Egg Tagliatelle with Wild Boar Ragù</li>
@@ -196,19 +215,19 @@
                 <li>Warm House-made Rosemary Sea Salt Focaccia</li>
               </ul>
             </div>
-            <button class="btn btn-primary" data-modal="catering" style="width: 100%; margin-top: 12px;">Inquire About Package →</button>
+            <button class="btn btn-primary" data-modal="catering" style="width: 100%; margin-top: auto;">Inquire About Package →</button>
           </div>
 
           <!-- Package 2 -->
           <div class="catering-package-card reveal-on-scroll">
             <div>
               <div class="package-img-wrapper">
-                <img src="assets/images/17.png" alt="The Family Feast Spread" class="package-img" loading="lazy">
+                <img src="assets/images/25.png" alt="The Family Feast Spread - Handcrafted egg pappardelle pasta with sage and parmigiano" class="package-img" loading="lazy">
                 <span class="package-badge">10 – 25 GUESTS</span>
               </div>
               <span class="eyebrow">FAMILY FEAST</span>
-              <h3 class="h3-editorial" style="margin-bottom: 6px;">THE FAMILY SPREAD</h3>
-              <p style="font-size: 0.9rem; color: var(--text-muted);">Generous family-style platters crafted for sharing around a crowded, festive Italian table.</p>
+              <h3 class="h3-editorial package-title" style="min-height: 2.7em; margin-bottom: 6px;">THE FAMILY SPREAD</h3>
+              <p class="package-desc" style="font-size: 0.9rem; color: var(--text-muted); min-height: 4.5em; line-height: 1.5; margin-bottom: 12px;">Generous family-style platters crafted for sharing around a crowded, festive Italian table.</p>
 
               <ul class="package-menu-list">
                 <li>Wide Pappardelle with Slow Beef Suffritto Ragù</li>
@@ -217,7 +236,7 @@
                 <li>Grand Antipasti Board, Olives & Truffle Balsamico</li>
               </ul>
             </div>
-            <button class="btn btn-primary" data-modal="catering" style="width: 100%; margin-top: 12px;">Inquire About Package →</button>
+            <button class="btn btn-primary" data-modal="catering" style="width: 100%; margin-top: auto;">Inquire About Package →</button>
           </div>
 
           <!-- Package 3 -->
@@ -228,8 +247,8 @@
                 <span class="package-badge">25 – 100+ GUESTS</span>
               </div>
               <span class="eyebrow">GRAND BANQUET</span>
-              <h3 class="h3-editorial" style="margin-bottom: 6px;">GRAND ITALIAN BANQUET</h3>
-              <p style="font-size: 0.9rem; color: var(--text-muted);">Full-scale catering with live fresh pasta rolling, custom pasta stations, and sommelier wine pairings.</p>
+              <h3 class="h3-editorial package-title" style="min-height: 2.7em; margin-bottom: 6px;">GRAND ITALIAN BANQUET</h3>
+              <p class="package-desc" style="font-size: 0.9rem; color: var(--text-muted); min-height: 4.5em; line-height: 1.5; margin-bottom: 12px;">Full-scale catering with live fresh pasta rolling, custom pasta stations, and sommelier wine pairings.</p>
 
               <ul class="package-menu-list">
                 <li>Custom 4-Shape Fresh Pasta & Sauce Atelier</li>
@@ -238,7 +257,7 @@
                 <li>Sommelier-Paired Chianti, Vermentino & Tiramisù</li>
               </ul>
             </div>
-            <button class="btn btn-primary" data-modal="catering" style="width: 100%; margin-top: 12px;">Discuss Custom Banquet →</button>
+            <button class="btn btn-primary" data-modal="catering" style="width: 100%; margin-top: auto;">Discuss Custom Banquet →</button>
           </div>
         </div>
       </div>
@@ -528,7 +547,7 @@
             <li><a href="home2.html">Home Pasta Bar</a></li>
             <li><a href="about.html">Our Atelier Story</a></li>
             <li><a href="products.html">Fresh Pasta & Sauces</a></li>
-            <li><a href="deli-counter.html">Deli Counter Selections</a></li>
+            <li><a href="deli-counter.html">Atelier Services</a></li>
             <li><a href="catering.html">Catering & Events</a></li>
             <li><a href="contact.html">Contact & Location</a></li>
           </ul>

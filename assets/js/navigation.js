@@ -89,9 +89,31 @@
       });
     }
 
-    // Close on navigation link click
-    mobileDrawer.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeDrawer);
+    // Accordion Toggle for Mobile Dropdowns (Home, Experience)
+    mobileDrawer.addEventListener('click', function (e) {
+      const toggleBtn = e.target.closest('.mobile-nav-toggle');
+      if (toggleBtn) {
+        e.preventDefault();
+        e.stopPropagation();
+        const dropdown = toggleBtn.closest('.mobile-nav-dropdown');
+        if (!dropdown) return;
+
+        const isOpen = dropdown.classList.contains('is-open');
+        if (isOpen) {
+          dropdown.classList.remove('is-open');
+          toggleBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          dropdown.classList.add('is-open');
+          toggleBtn.setAttribute('aria-expanded', 'true');
+        }
+      }
+    });
+
+    // Close on navigation link click (regular navigation links only)
+    mobileDrawer.querySelectorAll('.mobile-drawer-nav a, .mobile-submenu a').forEach(link => {
+      link.addEventListener('click', function () {
+        closeDrawer();
+      });
     });
 
     // Close on ESC key
@@ -111,19 +133,68 @@
     });
   }
 
+  // Desktop Dropdown Support (touch and click on tablet landscape / desktop)
+  function initDesktopDropdowns() {
+    const desktopDropdowns = document.querySelectorAll('.nav-dropdown');
+    desktopDropdowns.forEach(dropdown => {
+      const toggle = dropdown.querySelector('.dropdown-toggle');
+      if (!toggle) return;
+
+      toggle.addEventListener('click', function (e) {
+        if (window.innerWidth > 1024) {
+          if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+            if (!dropdown.classList.contains('is-open')) {
+              e.preventDefault();
+              desktopDropdowns.forEach(d => {
+                if (d !== dropdown) d.classList.remove('is-open');
+              });
+              dropdown.classList.add('is-open');
+              toggle.setAttribute('aria-expanded', 'true');
+            }
+          }
+        }
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        desktopDropdowns.forEach(d => {
+          d.classList.remove('is-open');
+          const toggle = d.querySelector('.dropdown-toggle');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+  }
+
   // Highlight Active Page Link & Manage Dropdowns
   function highlightActiveLink() {
-    const currentPath = window.location.pathname;
+    const rawPath = window.location.pathname;
+    const decodedPath = decodeURIComponent(rawPath).replace(/\\/g, '/');
+    const pathFilename = decodedPath.substring(decodedPath.lastIndexOf('/') + 1) || 'index.html';
 
-    const isHome1 = currentPath.endsWith('index.html') || currentPath === '/' || currentPath.endsWith('/') || currentPath.endsWith('\\index.html');
-    const isHome2 = currentPath.endsWith('home2.html');
+    const isHome1 = pathFilename === 'index.html' || pathFilename === '' || decodedPath.endsWith('/');
+    const isHome2 = pathFilename === 'home2.html';
     const isHome = isHome1 || isHome2;
+
+    const isCaseStudies = pathFilename === 'case-studies.html' || pathFilename === 'case studies.html';
 
     // Highlight desktop links & mobile drawer links
     document.querySelectorAll('.nav-link, .dropdown-link, .mobile-nav-link').forEach(link => {
       const href = link.getAttribute('href');
       if (href) {
-        if ((isHome1 && href === 'index.html') || (isHome2 && href === 'home2.html') || (!isHome && currentPath.endsWith(href))) {
+        let isActive = false;
+        if (isHome1 && href === 'index.html') {
+          isActive = true;
+        } else if (isHome2 && href === 'home2.html') {
+          isActive = true;
+        } else if (isCaseStudies && (href === 'case-studies.html' || href === 'case studies.html')) {
+          isActive = true;
+        } else if (!isHome && !isCaseStudies && pathFilename === href) {
+          isActive = true;
+        }
+
+        if (isActive) {
           link.classList.add('active');
           link.setAttribute('aria-current', 'page');
         } else {
@@ -133,7 +204,7 @@
       }
     });
 
-        // Parent dropdown triggers active state if any child link inside is active
+    // Parent dropdown triggers active state if any child link inside is active
     document.querySelectorAll('.nav-dropdown, .mobile-nav-dropdown').forEach(dropdown => {
       const toggle = dropdown.querySelector('.dropdown-toggle, .mobile-nav-toggle');
       const activeChild = dropdown.querySelector('.dropdown-link.active, .mobile-nav-link.active');
@@ -171,6 +242,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     initRTL();
     initMobileDrawer();
+    initDesktopDropdowns();
     highlightActiveLink();
     initStickyHeader();
   });

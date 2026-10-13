@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Test</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="modal-backdrop is-open" aria-hidden="false" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 class="h2-editorial modal-title">Fresh Pasta Order & Reservation</h3>
+      <div class="modal-body-content">
+        <div class="modal-badge-banner">
+          <span style="display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: #2e7559;">
+            <span style="width: 8px; height: 8px; background: #2e7559; border-radius: 50%; display: inline-block;"></span>
+            Fresh Batches Ready Today
+          </span>
+          <span style="opacity: 0.85;">Pickup: 11:00 AM – 7:30 PM</span>
+        </div>
+
+        <form class="modal-form" id="orderModalForm">
+          <div class="modal-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="modalName">Full Name *</label>
+              <input type="text" id="modalName" class="form-input" required placeholder="e.g. Marco Rossi" value="Marco Rossi">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="modalPhone">Phone Number *</label>
+              <input type="tel" id="modalPhone" class="form-input" required placeholder="e.g. +1 (555) 019-2834" value="+1 (555) 019-2834">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="modalEmail">Email Address *</label>
+            <input type="email" id="modalEmail" class="form-input" required placeholder="e.g. marco@example.com" value="marco@example.com">
+          </div>
+
+          <div class="modal-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="fulfillmentType">Fulfilment Option *</label>
+              <select id="fulfillmentType" class="form-select">
+                <option value="pickup" selected>🛍️ Atelier Counter Pickup (Free)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="timeSlot">Collection / Delivery Time *</label>
+              <select id="timeSlot" class="form-select">
+                <option value="11:30" selected>11:30 AM – 12:30 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="modalProduct">Select Fresh Item / Menu Selection</label>
+            <select id="modalProduct" class="form-select">
+              <option value="tagliatelle" selected>Tagliatelle Ribbon Cut (€14.50 / kg)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="modalMsg">Quantity or Special Instructions</label>
+            <textarea id="modalMsg" class="form-textarea" rows="2" placeholder="Specify quantities...">500g Tagliatelle + 1 jar sauce</textarea>
+          </div>
+
+          <div class="modal-status-badge">
+            <span>Estimated Order Status:</span>
+            <strong style="color: var(--tomato-red);">In Stock & Ready for Order</strong>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Order & Check Schedule →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('load', () => {
+      const card = document.querySelector('.modal-card');
+      const backdrop = document.querySelector('.modal-backdrop');
+      let wideEls = [];
+      document.querySelectorAll('.modal-card *').forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.right > card.getBoundingClientRect().right) {
+          wideEls.push((el.className || el.tagName) + ':' + Math.round(r.right));
+        }
+      });
+      document.title = 'CARD_W:' + Math.round(card.getBoundingClientRect().width) + '_WIN:' + window.innerWidth + '_OVER:' + wideEls.join(',');
+    });
+  </script>
+</body>
+</html>

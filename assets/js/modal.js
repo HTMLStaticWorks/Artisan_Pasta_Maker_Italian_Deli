@@ -6,8 +6,27 @@
   'use strict';
 
   function initModals() {
-    const backdrop = document.querySelector('.modal-backdrop');
-    if (!backdrop) return;
+    let backdrop = document.querySelector('.modal-backdrop');
+    if (!backdrop) {
+      backdrop = document.createElement('div');
+      backdrop.className = 'modal-backdrop';
+      backdrop.setAttribute('aria-hidden', 'true');
+      backdrop.setAttribute('role', 'dialog');
+      backdrop.setAttribute('aria-modal', 'true');
+      backdrop.innerHTML = `
+        <div class="modal-card">
+          <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+          <h3 class="h2-editorial modal-title">Enquiry Form</h3>
+          <div class="modal-body-content"></div>
+        </div>
+      `;
+      const container = document.getElementById('modalContainer');
+      if (container) {
+        container.appendChild(backdrop);
+      } else {
+        document.body.appendChild(backdrop);
+      }
+    }
 
     const modalTitle = backdrop.querySelector('.modal-title');
     const modalBody = backdrop.querySelector('.modal-body-content');
@@ -17,7 +36,7 @@
       order: {
         title: "Fresh Pasta Order & Reservation",
         content: `
-          <div style="background: rgba(46, 117, 89, 0.1); border: 1px solid rgba(46, 117, 89, 0.3); padding: 10px 14px; border-radius: var(--radius-sm); margin-bottom: var(--space-md); font-size: 0.82rem; display: flex; align-items: center; justify-content: space-between;">
+          <div class="modal-badge-banner">
             <span style="display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: #2e7559;">
               <span style="width: 8px; height: 8px; background: #2e7559; border-radius: 50%; display: inline-block;"></span>
               Fresh Batches Ready Today
@@ -26,7 +45,7 @@
           </div>
 
           <form class="modal-form" id="orderModalForm">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm);">
+            <div class="modal-grid-2col">
               <div class="form-group">
                 <label class="form-label" for="modalName">Full Name *</label>
                 <input type="text" id="modalName" class="form-input" required placeholder="e.g. Marco Rossi">
@@ -45,7 +64,7 @@
               <span class="error-msg">Please enter a valid email</span>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm);">
+            <div class="modal-grid-2col">
               <div class="form-group">
                 <label class="form-label" for="fulfillmentType">Fulfilment Option *</label>
                 <select id="fulfillmentType" class="form-select">
@@ -83,7 +102,7 @@
               <textarea id="modalMsg" class="form-textarea" rows="2" placeholder="Specify quantities (e.g. 500g Tagliatelle + 1 jar sauce) or dietary requirements..."></textarea>
             </div>
 
-            <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem;">
+            <div class="modal-status-badge">
               <span>Estimated Order Status:</span>
               <strong style="color: var(--tomato-red);">In Stock & Ready for Order</strong>
             </div>
@@ -151,6 +170,19 @@
     };
 
     function openModal(type) {
+      // Close mobile drawer if active
+      const mobileDrawer = document.querySelector('.mobile-drawer');
+      const drawerOverlay = document.querySelector('.mobile-drawer-overlay');
+      const hamburgerBtn = document.querySelector('.hamburger-btn');
+      if (mobileDrawer && mobileDrawer.classList.contains('is-open')) {
+        mobileDrawer.classList.remove('is-open');
+        if (drawerOverlay) drawerOverlay.classList.remove('is-open');
+        if (hamburgerBtn) {
+          hamburgerBtn.classList.remove('is-active');
+          hamburgerBtn.setAttribute('aria-expanded', 'false');
+        }
+      }
+
       const config = modalTemplates[type] || modalTemplates.order;
       if (modalTitle) modalTitle.textContent = config.title;
       if (modalBody) {
@@ -160,6 +192,10 @@
       backdrop.classList.add('is-open');
       backdrop.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
+
+      // Reset modal-card scroll to top
+      const modal = backdrop.querySelector('.modal-card');
+      if (modal) modal.scrollTop = 0;
     }
 
     function closeModal() {
